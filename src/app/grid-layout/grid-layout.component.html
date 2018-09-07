@@ -1,0 +1,6 @@
+<div class="grid-container" [style.height]="gridRows | gridItemHeight:gridRowHeightPixels">
+  <div *ngFor="let gridItem of gridItems" class="grid-item" [style.width]="gridItem.columnSpan | gridItemWidth:gridColumns"
+    [style.left]="gridItem.columnPosition | gridItemLeft:gridColumns" [style.height]="gridItem.rowSpan | gridItemHeight:gridRowHeightPixels"
+    [style.top]="gridItem.rowPosition | gridItemTop:gridRowHeightPixels">
+  </div>
+</div>

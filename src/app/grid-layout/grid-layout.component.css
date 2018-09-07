@@ -1,0 +1,14 @@
+.grid-container {
+  width: 100%;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.grid-item {
+  position: absolute;
+  background-color: green;
+  border: 1px black solid;
+  padding: 1em;
+  margin: 1em;
+}
